@@ -1,0 +1,22 @@
+<script>
+    let month = parseInt(prompt('월을 입력하세요'));
+    let days;
+
+    switch (month){
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            days=31
+            break
+        case 2:
+            days=28
+            break
+        case 4: case 6: case 9: case 11:
+            days=30
+            break
+        default:
+            document.write('올바른 월을 입력하세요')
+    }
+    document.write('<hr style="border: solid 5px green;">');
+    document.write(`<center><h3><span style = color: green>${month}월</span>은 <span style = color: green>${days}일</span>까지 있습니다.</h1></center>`)
+    document.write('<hr style="border: solid 5px green;">');
+
+</script>

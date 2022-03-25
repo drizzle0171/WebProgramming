@@ -1,0 +1,18 @@
+<script>
+    let date = new Date()
+    let month = date.getMonth()+1;
+    month++;
+    document.write('<hr style="border: solid 5px red; width:50%;">');
+    if ((3<=month)&&(month<=5)){
+        document.write('<h1>계절: <span style="background-color: green; color:white">spring</span></h1>')
+    }
+    else if ((6<=month)&&(month<=8)){
+        document.write('<h1>계절: <span style="background-color: red; color:white">summer</span></h1>')
+    }
+    else if ((9<=month)&&(month<=11)){
+        document.write('<h1>계절: <span style="background-color: yellow; color:white">fall</span></h1>')
+    }
+    else{
+        document.write('<h1>계절: <span style="background-color: blue; color:white">winter</span></h1>')
+    }
+</script>
