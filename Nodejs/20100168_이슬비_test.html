@@ -1,0 +1,17 @@
+<script>
+    let init = 1;
+    document.write(`<table border=1>`)
+    document.write('<caption style="color:blue; font-size:12pt;">1-10 홀수/짝수 색깔 출력')
+    document.write('<tr>')
+    for(let i=1; i<11; i++){
+        if(i%2==0){
+            document.write(`<td bgcolor="red"> <font style="color:white; font-size:20pt;">${i}</font>`);
+        }
+        else{
+            document.write(`<td bgcolor="green"> <font style="color:white; font-size:20pt;">${i}</font>`);
+  
+        }
+    }
+    document.write('</tr>')
+    document.write('</table>')
+</script>

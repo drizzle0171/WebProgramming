@@ -1,0 +1,14 @@
+<script>
+    let init = 1;
+    let sum = 0;
+    document.write('<table border="1">')
+    document.write('<caption style="color:blue; font-size:20pt;""> 0~10까지의 합계</caption>')
+    document.write('<tr>')
+    while(init<=10){
+        document.write(`<td bgcolor="cyan"; style="color:green; font-size:20pt;">${init}`);
+        sum += init;
+        init++;
+    }
+    document.write(`<tr bgcolor="red"><td colspan =10; align="center"; style="color:white; font-size:20pt;">합계: ${sum}</tr>`)
+    document.write('</table>')
+</script>

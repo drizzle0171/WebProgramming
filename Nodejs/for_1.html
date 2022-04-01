@@ -1,0 +1,15 @@
+<script>
+    let num = parseInt(prompt("원하는 숫자"));
+        let init = 1;
+        let sum = 0;
+
+        document.write(`<table border='1'>`)
+        document.write(`<tr>`)
+        document.write(`<td bgcolor="blue" style="color:white; font-size:20pt;">1-${num}까지의 합계</td>`)
+        for(let i=1; i<(num+1); i++){
+            sum+=i;
+        }
+        document.write(`<td bgcolor="red" style="color:white; font-size:20pt;">${sum}`)
+        document.write('</tr>')
+        document.write('</table>')
+</script>
