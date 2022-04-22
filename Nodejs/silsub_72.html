@@ -1,0 +1,23 @@
+<script>
+    let array=[15, 23, 42, 55, 46, 78, 50, 91, 3, 12];
+
+    document.write(`
+            <table border='1'>
+                <tr>
+                    <td colspan='5' style="background: green;">
+                        <p style="color: white; text-align: center;"> array 짝수 </p>
+                    </td>
+                </tr>`)
+    document.write('<tr>')
+    for(let i in array) {
+        if (array[i]%2==0) {
+                document.write(`<td>
+                    <p style="color: blue;">${array[i]}</p>
+                </td>    
+            `)
+        }
+    }
+        document.write('</tr>')
+        document.write(`</table>`)
+
+</script>
