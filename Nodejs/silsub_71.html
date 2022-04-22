@@ -1,0 +1,13 @@
+<script>
+    let last = prompt('마지막 숫자:');
+    let times = prompt('뛰어넘을 배수 숫자: ');
+
+    for (let i = 1; i<last+1; i++){
+        if (i%times == 0) {
+            continue
+        }
+        else {
+            document.write(`<p style="color: blue;"> ${i} </p>`)
+        }
+    }
+</script>
