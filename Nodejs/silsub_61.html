@@ -1,0 +1,21 @@
+<script>
+    let sum = 0;
+    
+    document.write('<table border="1">')
+    document.write('<caption style="color: blue;"> 1 - 10까지 출력 </caption>')
+    document.write('<tr>')
+    for (let i=1; i<11; i++){
+        console.log(i)
+        document.write(`<td style="background: blue"> <p style="color: white;"> 
+             ${i} 
+            </td>`)
+        sum += i
+    }
+    document.write('</tr>')
+    document.write(`<tr>`)
+    document.write(`<td colspan="10" style="background: red;"> <font style="color:white;"> 합계: ${sum} </font> </td>`)
+    document.write('</tr>')
+    document.write('</table>')
+    console.log(sum)
+    
+</script>
