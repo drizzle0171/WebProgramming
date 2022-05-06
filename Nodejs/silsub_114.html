@@ -1,0 +1,17 @@
+<script>
+    let person = '{"channel":"TvN", "name":"강호동", "title": "방송인", "program": "올탁구나", "age":51,"sosok":"SM C&C"}';
+    let tv = JSON.parse(person);
+    console.log(tv)
+    console.log(tv.name)
+    document.write(
+        `<p class='font' > 국민MC: ${tv.name}</p>
+        <p class='font' > 나이: ${tv.age}</p>
+        <p class='font' > 채널: ${tv.channel}</p>
+        <p class='font' > 프로그램: ${tv.program}</p>`
+    )
+</script>
+<style>
+.font{
+    color: blue;
+}
+</style>
