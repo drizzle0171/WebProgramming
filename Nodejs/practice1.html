@@ -1,0 +1,37 @@
+<script>
+class products{
+    constructor(name, price, amount){
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }
+}
+
+let shrimp = new products('새우깡', 3500, 15);
+let potato = new products('감자깡', 2800, 10);
+let mongshell = new products('몽쉘통통', 3000, 5);
+let honey = new products('꿀꽈배기', 2600, 10);
+
+Products = [shrimp, potato, mongshell, honey];
+
+for (let i=0; i<Products.length; i++){
+    document.write(`<p>${Products[i].name} 가격은 <p id='green'>${Products[i].price}</p>원, 수량은 <p id = 'green'>${Products[i].amount}</p>, 판매가격은 <p id="selling_price">${Products[i].price * Products[i].amount}</p>원 입니다.</p>`)
+}
+</script>
+<style>
+p{
+    color: blue;
+    font-size: 13px;
+}
+#green{
+    color: green;
+    font-style: italic;
+    border: double 2px red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#selling_price{
+    border: solid 2px red;
+}
+</style>
